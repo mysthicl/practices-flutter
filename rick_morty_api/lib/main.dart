@@ -1,6 +1,7 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
@@ -9,13 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoApp(
-      title: 'Rick and Morty API',
-      theme: CupertinoThemeData(
-        brightness: Brightness.dark,
-        primaryColor: CupertinoColors.activeBlue,
-      ),
-      home: Container(), // Aquí iría la pantalla principal de tu aplicación
+    return MaterialApp(
+      title: 'API Practice',
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
     );
   }
 }

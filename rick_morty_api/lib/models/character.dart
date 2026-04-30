@@ -16,10 +16,10 @@ class Character {
     required this.gender,
     required this.image,
     required this.origin,
-    required this.location
+    required this.location,
   });
 
-  factory Character.fromJson(Map<String, dynamic> json){
+  factory Character.fromJson(Map<String, dynamic> json) {
     return Character(
       id: json['id'],
       name: json['name'],
@@ -28,7 +28,7 @@ class Character {
       gender: json['gender'],
       image: json['image'],
       origin: json['origin']['name'],
-      location: json['location']['name']
+      location: json['location']['name'],
     );
   }
 }
